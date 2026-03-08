@@ -94,8 +94,8 @@
     --secondary-foreground: rgb(10, 10, 10);
     --muted: rgb(16, 16, 16);
     --muted-foreground: rgb(180, 180, 190);
-    --accent: rgb(234, 234, 196);
-    --accent-foreground: rgb(10, 10, 10);
+    --accent: rgb(22, 22, 22);
+    --accent-foreground: rgb(255, 255, 255);
     --destructive: rgb(248, 113, 113);
     --border: rgb(30, 30, 30);
     --input: rgb(30, 30, 30);
@@ -109,8 +109,8 @@
     --sidebar-foreground: rgb(255, 255, 255);
     --sidebar-primary: rgb(155, 179, 119);
     --sidebar-primary-foreground: rgb(10, 10, 10);
-    --sidebar-accent: rgb(234, 234, 196);
-    --sidebar-accent-foreground: rgb(10, 10, 10);
+    --sidebar-accent: rgb(22, 22, 22);
+    --sidebar-accent-foreground: rgb(255, 255, 255);
     --sidebar-border: rgb(30, 30, 30);
     --sidebar-ring: rgb(155, 179, 119);
 }
@@ -121,5 +121,15 @@
     }
     body {
         @apply bg-background text-foreground;
+    }
+
+    p,
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    label {
+        @apply text-sm;
     }
 }
