@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { feedbackRoutes } from "./features/feedbacks/feedback.route";
 
 const router = Router();
 
@@ -12,5 +13,6 @@ router.get("/health", (_req, res) => {
 });
 
 // Feature routes
+router.use("/feedbacks", feedbackRoutes);
 
 export { router as apiRoutes };

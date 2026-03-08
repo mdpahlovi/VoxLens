@@ -1,10 +1,14 @@
 import { config, validate } from "@/config";
+import { connect } from "@/utils/client";
 import { app } from "./app";
 
 const startServer = async (): Promise<void> => {
     try {
         // Validate environment variables
         validate();
+
+        // Connect DB
+        await connect();
 
         // Start server
         const server = app.listen(config.port, () => {
